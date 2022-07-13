@@ -37,7 +37,12 @@ const darkMode = theme.state.darkMode;
         <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <motion.img 
+        initial={{top:'20rem'}}
+        transition={transition}
+
+        whileInView={{top:'0rem'}}
+        src={boy} alt="" />
         <motion.img
         initial={{left:'-36%'}}
         whileInView={{left:'-20%'}}
